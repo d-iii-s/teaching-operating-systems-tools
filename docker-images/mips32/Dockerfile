@@ -1,5 +1,8 @@
 FROM mffd3s/nswi004-base:latest
 
+# Install Copr plugin
+RUN dnf install -y dnf-plugins-core
+
 # Enable our Copr repository
 RUN dnf copr enable -y d3s/teaching
 
