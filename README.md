@@ -1,2 +1,3 @@
-# teaching-operating-systems-tools
-Tools and scripts for NSWI004 course
+# NSWI004 (Operating Systems) Tools and Scripts
+
+
