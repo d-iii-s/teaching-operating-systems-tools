@@ -5,7 +5,7 @@ Summary: Cross-build GDB for mipsel-linux-gnu.
 
 License: GPL
 URL: https://www.gnu.org/software/gdb/
-Source: http://ftp.gnu.org/gnu/gdb/gdb-8.2.tar.gz
+Source: https://ftp.gnu.org/gnu/gdb/gdb-8.2.tar.gz
 
 Requires: gmp
 Requires: isl
