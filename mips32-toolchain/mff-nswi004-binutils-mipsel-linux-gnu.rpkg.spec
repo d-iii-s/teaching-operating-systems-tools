@@ -46,6 +46,7 @@ cd binutils-2.30
 cd binutils-2.30
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT/opt/mff-nswi004/share/info/
 find $RPM_BUILD_ROOT
 
 %files

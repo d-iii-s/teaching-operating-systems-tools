@@ -48,6 +48,7 @@ cd build
 cd build
 rm -rf $RPM_BUILD_ROOT
 make install-gcc DESTDIR=$RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT/opt/mff-nswi004/share/info/
 find $RPM_BUILD_ROOT/
 
 %files

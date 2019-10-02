@@ -46,6 +46,7 @@ cd gdb-8.2
 cd gdb-8.2
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT/opt/mff-nswi004/share/info/
 find $RPM_BUILD_ROOT
 
 %files
