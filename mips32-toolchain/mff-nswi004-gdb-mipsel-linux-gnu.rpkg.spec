@@ -14,6 +14,7 @@ BuildRequires: gmp-devel
 BuildRequires: isl-devel
 BuildRequires: libmpc-devel
 BuildRequires: gcc-c++
+BuildRequires: texinfo
 
 %description
 Cross-build GDB for mipsel-linux-gnu.
