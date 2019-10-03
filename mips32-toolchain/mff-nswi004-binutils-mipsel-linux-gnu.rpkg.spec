@@ -1,6 +1,6 @@
 Name: mff-nswi004-binutils-mipsel-linux-gnu
 Version: 2.30
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Cross-build binary utilities for mipsel-linux-gnu.
 
 License: GPL

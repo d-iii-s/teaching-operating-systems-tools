@@ -1,6 +1,6 @@
 Name: mff-nswi004-gcc-mipsel-linux-gnu
 Version: 8.2.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Cross-build GCC for mipsel-linux-gnu.
 
 License: GPL
