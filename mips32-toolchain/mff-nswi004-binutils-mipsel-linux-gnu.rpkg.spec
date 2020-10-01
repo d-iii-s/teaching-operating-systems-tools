@@ -1,11 +1,11 @@
 Name: mff-nswi004-binutils-mipsel-linux-gnu
-Version: 2.30
-Release: 2%{?dist}
+Version: 2.35.1
+Release: 1%{?dist}
 Summary: Cross-build binary utilities for mipsel-linux-gnu.
 
 License: GPL
 URL: https://sourceware.org/binutils
-Source: https://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.bz2
+Source: https://ftp.gnu.org/gnu/binutils/binutils-2.35.1.tar.bz2
 
 Requires: gmp
 Requires: isl
@@ -23,10 +23,10 @@ Used at Charles University course NSWI004.
 %global debug_package %{nil}
 
 %prep
-tar xjf $RPM_SOURCE_DIR/binutils-2.30.tar.bz2
+tar xjf $RPM_SOURCE_DIR/binutils-2.35.1.tar.bz2
 
 %build
-cd binutils-2.30
+cd binutils-2.35.1
 ./configure \
   --prefix=/opt/mff-nswi004/ \
   --target=mipsel-linux-gnu \
