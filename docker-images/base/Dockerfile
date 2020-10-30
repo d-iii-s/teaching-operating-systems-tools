@@ -1,4 +1,4 @@
-FROM fedora:30
+FROM fedora:33
 
 # Install development tools
 RUN dnf install -y git gcc binutils make clang
