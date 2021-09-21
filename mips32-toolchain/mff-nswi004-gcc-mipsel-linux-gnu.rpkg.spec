@@ -1,11 +1,11 @@
 Name: mff-nswi004-gcc-mipsel-linux-gnu
-Version: 10.2.0
+Version: 11.2.0
 Release: 1%{?dist}
 Summary: Cross-build GCC for mipsel-linux-gnu.
 
 License: GPL
 URL: http://gcc.gnu.org
-Source: https://ftpmirror.gnu.org/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
+Source: https://ftpmirror.gnu.org/gcc/gcc-11.2.0/gcc-11.2.0.tar.gz
 
 Requires: gmp
 Requires: isl
@@ -23,12 +23,12 @@ Used at Charles University course NSWI004.
 %global debug_package %{nil}
 
 %prep
-tar xzf $RPM_SOURCE_DIR/gcc-10.2.0.tar.gz
+tar xzf $RPM_SOURCE_DIR/gcc-11.2.0.tar.gz
 
 %build
 mkdir build
 cd build
-../gcc-10.2.0/configure \
+../gcc-11.2.0/configure \
     --prefix=/opt/mff-nswi004/ \
     --target=mipsel-linux-gnu \
     --program-prefix=mipsel-linux-gnu- \
