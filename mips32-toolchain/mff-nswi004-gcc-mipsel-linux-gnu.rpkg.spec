@@ -28,7 +28,11 @@ tar xzf $RPM_SOURCE_DIR/gcc-12.2.0.tar.gz
 %build
 mkdir build
 cd build
-../gcc-12.2.0/configure \
+
+# Bypass issues with format-security warnings
+fixed_cflags=`echo %{optflags} | sed -e 's/-Werror=format-security/-Wformat-security/g'`
+
+CFLAGS="$fixed_cflags" CXXFLAGS="$fixed_cflags" ../gcc-12.2.0/configure \
     --prefix=/opt/mff-nswi004/ \
     --target=mipsel-linux-gnu \
     --program-prefix=mipsel-linux-gnu- \
